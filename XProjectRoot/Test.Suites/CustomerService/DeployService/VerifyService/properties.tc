@@ -1,0 +1,47 @@
+$endpoint = {http://www.predic8.com:8080/crm/CustomerService}
+$headers = {Content-Type:text/xml}
+
+#
+# Gives you options to nest values
+#
+
+$requestbody = 
+{
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			   xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			   xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	<ns1:getAll xmlns:ns1="http://predic8.com/wsdl/crm/CRMService/1/"/>
+  </soap:Body>
+</soap:Envelope>
+}
+
+$request =
+{
+   <ns1:create xmlns:ns1='http://predic8.com/wsdl/crm/CRMService/1/'>
+  <customer xmlns:ns1='http://predic8.com/crm/1/'>
+    <person xmlns:ns1='http://predic8.com/common/1/'>
+      <id xmlns:ns1='http://predic8.com/common/1/'>345678</id>
+      <firstName>Sharp</firstName>
+      <lastName>Mule</lastName>
+      <address>
+        <street>Test Street</street>
+        <city>Mulan</city>
+        <zipCode>99999</zipCode>
+        <country>Testonia</country>
+      </address>
+      <age>99</age>
+    </person>
+    <address>
+      <street xmlns:ns1='http://predic8.com/common/1/'>Comp</street>
+      <city xmlns:ns1='http://predic8.com/common/1/'>Test</city>
+      <zipCode xmlns:ns1='http://predic8.com/common/1/'>23232</zipCode>
+      <country xmlns:ns1='http://predic8.com/common/1/'>Testonia</country>
+      <companyName>SharpMuleInc</companyName>
+    </address>
+    <id xmlns:ns1='http://predic8.com/crm/1/'>23222</id>
+  </customer>
+</ns1:create>
+
+}
+

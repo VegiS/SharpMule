@@ -1,0 +1,15 @@
+!attach<$MSGAPI/productsearchrequest>
+!attach<properties>
+
+# See properties file for endpoints and request bodies
+
+# Initially $value1 = 5 and $value2 = 2
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Addition request to calculate 5+2
+verify{value,AddResult,$expectedResult} # Verify Expected Result is 6
+let{value,value2,AddResult} # Get Result Value and assign it to value2
+
+# Now our $value2 = 7 so the new addintion should produce 9
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Addition request
+verify{value,AddResult,9} # Verify Expected Result is 9
+
+

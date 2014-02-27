@@ -1,0 +1,132 @@
+Built-In Functions
+$GETDATE(days_from_today,format) # returns date n number of days from today in given format
+$GETGUID                         # returns random GUID
+$WAIT_TO_COMPLETE				 # Waits for the TestCases in the TestSuite to complete before it moves to the next one
+
+Built-In SubFunctions
+ToLower()
+ToUpper()
+ToUpperLowerMix()
+ToDateTimeFormat(yyyy-MM-ddThh:mm:ss-12:00)
+
+Example:
+$GUID = {$GETGUID}
+$departDt = {$GETDATE(5,yyyy-MM-dd)}   # 5 days from now in yyyy-MM-dd format
+$hotelCkin = {$GETDATE(10,dd/mm/yyyy)} # 10 days from no in dd/mm/yyyy format
+$WAIT_TO_COMPLETE = {true} # Set it to true if you want to wait for the test cases to complete. Its set to default by default
+
+Special Characters
+
+1) #  This is used to add comments to the script as well as procedure description.
+2) !  This is use to set certain procedures as critical which means test step will stop from further execution if the test step fails
+3) $  This is use to to define or use Variables as well as Build-In Functions
+
+Example:
+!verify{xml,InsurancePolicy,$insurexpectedxml} # Verify InsurancePolicy
+
+Procedures
+
+Name:
+httprequest
+httpfastinfosetrequest
+httpbsonrequest
+
+Summary:
+Use this procedure to make webservice request. You can do both Soap and Rest requests by simply providing method, url and body. You can also do FastInfoSet if needed by using httpfastinfosetrequest call as well as httpbsonrequest if you need to verify bson response from the itinerary services
+
+
+Syntex:
+httprequest{method,url,[body]}
+httpfastinfosetrequest{method,url,[body]}
+httpbsonrequest{get,url}
+
+method: get,delete,post,put
+url: request url
+body: request body (not required for get/delete method)
+
+Example:
+httprequest{get,$grails_air_url} # Get Grails Info for Air
+httprequest{post,$createtrip_url,$request} # CreateTrip Request
+httpfastinfosetrequest{post,$atlantis,$lsrequest} # Get lodging info from Atlantis
+httpbsonrequest{get,$bsoncall} # Get Bson Response
+tryhttprequest{get,$solrurl/$query,,,201,numFound="1",$timeout} # Keep requesting until you meet criteria or timeout
+
+Name:
+let
+
+Summary: 
+Use this procedure to get specific content from the webresponse against which you can verify. You can search different parts of the 
+webservice response by using regular expressions (method:regex), xpath expressions (method:xpath), xelement using C# linq library (method:value), 
+html using HtmlAgelityPack( method:html),xmlDocument if you want to do xml diff (method:xml). 
+
+Syntex:
+let{method,variable,locator}
+
+method: value,html,xml,xpath,regex
+variable: String Variable which will store the value
+locator: String value which will be used by the specified method to search the response and store the value into the specified variable
+
+Example:
+let{html,PIID,substring(//*[@class='piid'](0))[0]} # Get PIID from Air Search
+let{xpath,TripID,//ns8:TripID} # Get TripID
+let{value,StatusCat,StatusCodeCategory} # Get StatusCodecategory and store the value into StatusCat variable
+let{value,LastName,LastName.ToLower()} # Get the LastName all lower case
+let{value,DateTime,DateTime.ToDataTimeFormat(yyyy-MM-ddThh:mm:ss-12:00)} # Get the datetime in specific format
+let{regex,MessageVersion,(?<=MessageVersion=\")[\d+]\.[\d+]\.[\d+](?=\")} # Get MessageVersion and store it into MessageVersion variable
+let{xml,InsPolicy,InsurancePolicy} # Get InsurancePolicy and store it into insPolicy
+let{xml.find,InsuranceEntityID,sibling:InsuranceProductEntity:EntityID} # Get Insurance Entity ID 
+let{xml.find,Resource,descendent:SharedResources:Resource:name=TripNode:Trip001} # Get Resource node where attribute name is TripNode:Trip001 by attribute
+let{xml.find,NewOrderLine,descendent:OrderLineList:OrderLine:OrderLineStatus=Booked} # Get NewOrderLine by value
+let{xml.count,Count,TransactionAmount} # Get TransactionAmount InstancesCount
+let{value.from.xml,TestValue,Test,$Resource} # Get Test Info from the Node
+let{value.from.xml.attribute,status,status} # Get Status from the attribute
+let{value.from.xml,tpid,TPID,$TripKeyNode} # Get TPID from the given xml stored in $TripKeyNode variable
+
+Name:
+verify
+
+Summary: 
+Use this procedure to verify specific content from the webresponse. You can search different parts of the 
+webservice response by using regular expressions (method:regex), xpath expressions (method:xpath), xelement using C# linq library (method:value), 
+html using HtmlAgelityPack( method:html),xmlDocument if you want to do xml diff (method:xml) and compare against expected result. Expected Result can be
+plain string or variable. 
+
+Syntex:
+verify{method,locator,expected_value}
+
+method: value,html,xml,xpath,regex
+locator: String value which will be used by the specified method to search the response for the specific content
+expected_value; String value or previously defined variable that holds some value which you want to compare with the content returned by the search
+
+Example:
+verify{value,StatusCodeCategory,Success} # Verify Status Category
+verify{regex,(?<=MessageVersion=\")[\d+]\.[\d+]\.[\d+](?=\"),1.0.0} # Verify Message Version
+verify{xpath,//ns1:TPID,1} # Verify TPID
+verify{xml,InsurancePolicy,$insurexpectedxml} # Verify InsurancePolicy
+verify{html,substring(//*[@class='piid'](0))[0],$ExpectedPiid} # Verify PIID from Air Search with expected piid
+verify{value.find,sibling:LegacyOrderLineTransactionState:PackageEntity,1} # Find LegacyOrderLineTransactionState which is a sibling of PackageEntity and verify its 1
+verify{xml.compare-same,InsuranceProductEntity,$SecondInsurance} # Verify that two nodes are identical
+verify{xml.compare-similar,InsuranceProductEntity,$SecondInsurance,20} # Verify that two nodes are similar by using LevenshteinDistance algorithm
+verify{xml.exists,StatusMsg} # Verify Status Msg exists
+verify{xml.nexist,StatusMsg} # Verify StatusMsg Node Does not exist
+verify{xml.count,Entity,1} # Verify there is only 1 Entity in the Xml
+verify{value.contains,StatusMsg,ValidationException} # Verify it contains ValidationException string
+verify{value.ncontains,StatusMsg,ValidationException} # Verify it Does Not contain ValidationException string
+verify{value.in.contains,$Variable,StringToContains} # Verify some info stored in $Variables contains given string
+verify{value.in.equals,$BsonInstanceID,$InstanceID} # Verify Instance ID from Bson and MetaData equal
+verify{value.in.nequals,$BsonInstanceID,$InstanceID} # Verify Instance ID from Bson and MetaData equal
+verify{value.exists,StatusMsg} # Verify Status Msg exists
+verify{value.nexist,StatusMsg} # Verify StatusMsg Value Does not exist
+verify{value.from.xml.attribute,UserPhoneLocalNbr,$userphonenumber} # Verify Phone Number without AreaCode
+verify{value.from.xml.attribute,UserPhoneLocalNbr,$userphonenumber,$FullDoc} # Verify Phone Number without AreaCode given an Xml stored in $FullDoc
+
+#Solr Specific but could be used for other stuff as well
+verifyservice{stop|start|restart,servicename,timeout} # Try to Stop,Start,Restart specific service and verify that its actually in that state
+	verifyservice{stop,vsidl,60000} # Stop the service called vsidl and give it 1 minute do stop. 
+
+verifyservicelog{logfilepath,String,true|false} # Given file path, verify if the ErrorString is contained int he log file and if that errorstring is expected(true/false) 
+	verifyservicelog{C:\log.log,ERROR,false} # Verify that there is no errors in ServerLog
+verifydeployment{install|install.newbuild|uninstall,binariesdir,executablename,servicename,buildpath,sourcepath,errortocheckfor}
+	verifydeployment{install.newbuild,$bindir,$installBatchName,$serviceName,$buildPath,$sourcePath,$error,false} # Deploy new Build and Install Voyager IncDL
+	verifydeployment{install,$bindir,$installBatchName,$serviceName,$buildPath,$sourcePath,$error,true} #  Verify Install Voyager IncDL over the existin installation gives approprt. errors
+	verifydeployment{uninstall,$bindir,$uninstallBatchName,$serviceName} # Uninstall Voyager IncDL while service is stopped

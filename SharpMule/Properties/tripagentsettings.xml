@@ -1,0 +1,12 @@
+<settings>
+  <script>
+    <root>C:\XProjectRoot</root>
+    <settingfile>C:\XProjectRoot\Global.Test.Settings\settings.tc</settingfile>
+  </script>
+  <email>
+    <smtphost>...</smtphost> 
+    <recipiant>email</recipiant>
+  </email>
+</settings>
+
+

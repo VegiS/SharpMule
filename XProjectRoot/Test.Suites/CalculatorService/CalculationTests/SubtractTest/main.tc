@@ -1,0 +1,17 @@
+<Subtract xmlns="http://tempuri.org/">
+      <a>int</a>
+      <b>int</b>
+    </Subtract>!attach<properties>
+
+# See properties file for endpoints and request bodies
+
+# Initially $value1 = 10 and $value2 = 3
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Subtraction request to calculate 10-3
+verify{value,SubtractResult,$expectedResult} # Verify Expected Result is 7
+let{value,value2,SubtractResult} # Get Result Value and assign it to value2
+
+# Now our $value1 = 7 so the new subtract should produce 3 because 10 - 7
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Subtract request
+verify{value,SubtractResult,3} # Verify Expected Result is 3
+
+

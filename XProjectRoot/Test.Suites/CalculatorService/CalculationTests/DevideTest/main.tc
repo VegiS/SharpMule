@@ -1,0 +1,14 @@
+!attach<properties>
+
+# See properties file for endpoints and request bodies
+
+# Initially $value1 = 12 and $value2 = 2
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Divide request to calculate 12/2
+verify{value,DivideResult,$expectedResult} # Verify Expected Result is 6
+let{value,value2,DivideResult} # Get Result Value and assign it to value2
+
+# Now our $value2 = 6 so the new division should produce 3
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Division request
+verify{value,DivideResult,2} # Verify Expected Result is 2
+
+

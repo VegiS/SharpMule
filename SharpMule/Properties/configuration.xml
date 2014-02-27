@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <script>
+    <root>XProjectRoot</root>
+  </script>
+  <projects>
+	<project>
+      <path>..\..\XProjectRoot\Test.Suites\CalculatorService</path>
+    </project>
+	<project>
+      <path>..\..\XProjectRoot\Test.Suites\CustomerService</path>
+    </project>
+  </projects>
+  <editor>
+    <name>Notepad++</name>
+    <exepath>"C:\Program Files (x86)\Notepad++\notepad++.exe"</exepath>
+  </editor>
+  <email>
+    <smtphost>...</smtphost>
+    <recipient>email</recipient>
+    <isenabled>true</isenabled>
+  </email>
+  <logging>
+    <isenabled>false</isenabled>
+    <dbserver>yourservername</dbserver>
+    <dbname>dbname</dbname>
+  </logging>
+  <connections>
+    <connection>
+      <name>Test Box</name>
+      <host>server2</host>
+      <port>5555</port>
+      <envmap>TestEnv</envmap>
+    </connection>
+  </connections>
+  <environments>
+    <defaultenvironment>TEST</defaultenvironment>
+    <settings>
+      <root>..\..\XProjectRoot\Global.Test.Settings\</root>
+      <global>settings.tc</global>
+    </settings>
+    <environment>
+      <name>TEST</name>
+      <setting>test.tc</setting>
+      <defaultepindex>0</defaultepindex>
+      <endpointlist>
+        <endpoint>your.endpoint.net</endpoint>
+        <endpoint>mydevbox:4444</endpoint>
+      </endpointlist>
+    </environment>
+  </environments>
+  <tools>
+    <tool>
+      <name>...</name>
+      <path>...</path>
+    </tool>
+  </tools>
+</configuration>

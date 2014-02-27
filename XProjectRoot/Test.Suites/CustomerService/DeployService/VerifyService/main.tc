@@ -1,0 +1,42 @@
+!attach<properties>
+
+# You are also able to do more complex testing. 
+# Since i dont have any public test environmetn here is sample script for such action
+# Scenario 1
+# 1) Deploy Service to your linux box
+# 2) Send httprequest to enter new customer (this will also verify if the service is working)
+# 3) verify webservice has added new customer to the sql database (supported dbs: mysql,sql server)
+
+
+
+# Deploy Service to your Linux box
+$host = {your linux host machine/vm}
+$user = {your username for the vm}
+$pass = {your password for the vm}
+$timeout = {60000} #timeout after 1 min. Set it higher if your dep takes longer
+
+$cmd1 = {sudo apt-get install python-webpy;/tmp/deployrunservice.sh}
+
+!ssh{$host,$user,$pass,$cmd,$timeout} # ssh into the box and deploy your service
+
+
+# Send httprequest to enter new customer (this will also verify if the service is working)
+
+$endpoint = {your servioce endpoint}
+$requestbody = {your soap/rest message body}
+$headers = {header:value;header2:value;etc...}
+
+httprequest{post,$endpoint,$requestbody,$headers} # Add new customer
+verify{value,StatusCode,200} # Verify success
+
+
+# Go into SQl server to verify your new customer has been added
+
+$server = {your sql server host}
+$dbname = {your dbname}
+
+$query = {select top 10 * Customers from Database where CustomerName="Your Name"}
+
+sqlexecute{$server,$dbname,$query} # Send query to DB
+verify{value,CustomerName,"Your Name"} # Verify customer has been found and its the correct name
+

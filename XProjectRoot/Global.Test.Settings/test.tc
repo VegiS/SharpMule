@@ -1,0 +1,5 @@
+# Environment Specific Settings
+$ENDPOINT = {http://ws1.services.ws}
+
+$USER = {3444}
+$LOGINUSERID = {5}

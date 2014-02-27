@@ -1,0 +1,6 @@
+# Script Settings
+$ROOT = C:\XProject
+$MSGAPI = C:\XProjectRoot\Global.Message.Api
+$SETTINGS = C:\XProjectRoot\Global.Test.Settings
+$TESTSUITES = C:\XProjectRoot\Test.Suites
+#

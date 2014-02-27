@@ -1,0 +1,14 @@
+!attach<properties>
+
+# See properties file for endpoints and request bodies
+
+# Initially $value1 = 5 and $value2 = 2
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Multiply request to calculate 5 * 2
+verify{value,MultiplyResult,$expectedResult} # Verify Expected Result is 10
+let{value,value1,MultiplyResult} # Get Result Value and assign it to value1
+
+# Now our $value1 = 10 so the new multiplication should produce 50
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Multiply request
+verify{value,MultiplyResult,50} # Verify Expected Result is 50
+
+

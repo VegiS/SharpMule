@@ -1,0 +1,34 @@
+$endpoint = {http://www.html2xml.nl/Services/Calculator/Version1/Calculator.asmx?op=Multiply}
+$headers = {Content-Type:text/xml}
+
+#
+# Gives you options to nest values
+#
+
+$value1 = {2}
+$value2 = {5}
+
+$requestbody = 
+{
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			   xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			   xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+	$request
+  </soap:Body>
+</soap:Envelope>
+}
+
+$request =
+{
+    <Multiply xmlns="http://tempuri.org/">
+      <a>$value1</a>
+      <b>$value2</b>
+    </Multiply>
+
+}
+
+
+$expectedResult = {10}
+
+

@@ -1,0 +1,9 @@
+!attach<properties>
+
+# See properties file for endpoints and request bodies
+
+# Initially $value1 = 5 and $value2 = 2
+!httprequest{post,$endpoint,$requestbody,$headers} # Send Addition request to calculate 5+2
+
+verify{xml,AddResponse,$expectedResult} # Verify expected AddResponse Result is Valid
+

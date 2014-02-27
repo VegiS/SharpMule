@@ -1,0 +1,6 @@
+!attach<$SETTINGS/settings>
+
+# In this file you can define all your requests for particular service then call it from your test case
+#by adding following line of code !attach <$MSGAPI/replaceyourrequestfile> 
+# To change the mappings or add new ones go to SharpMule\Properties\script.settings 
+# and you will see $MSGAPI and $SETTINGS mapping in there
