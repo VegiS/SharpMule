@@ -278,33 +278,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\img\background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\icons\testmule.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Resources\img\SplashScreen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img\SplashScreen.1.0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\img\network_connections.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img\SplashScreen2.0.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Actions\ActionsCollection.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons\testmule2.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -313,19 +294,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\testmuleicon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img\SplashScreenOval2.0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img\TestMules.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="icon_512.ico" />
   </ItemGroup>
   <ItemGroup>
     <SplashScreen Include="Resources\img\SharpMuleSplash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\icons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

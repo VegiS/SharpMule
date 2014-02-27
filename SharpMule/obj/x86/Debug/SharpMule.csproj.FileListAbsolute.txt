@@ -40,3 +40,45 @@
 \\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule\obj\x86\Debug\SharpMule.csproj.GenerateResource.Cache
 \\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule\obj\x86\Debug\SharpMule.exe
 \\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule\obj\x86\Debug\SharpMule.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\SharpMule.exe.config
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SharpMule.exe
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SharpMule.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SharpMule.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\AdvancedFeaturesWindow.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\DialogBoxes\NewEndpointEntryUserControl.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\HelpViewer.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\MainWindow.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SuiteViewer.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\TestCaseViewer.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Themes\BureauBlack.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Themes\BureauBlue.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Themes\ExpressionDark.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Themes\ExpressionLight.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Themes\ShinyRed.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Themes\WhistlerBlue.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Viewer.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\App.baml
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\AdvancedFeaturesWindow.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\DialogBoxes\NewEndpointEntryUserControl.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\HelpViewer.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\MainWindow.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SuiteViewer.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\TestCaseViewer.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\Viewer.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\App.g.cs
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SharpMule_MarkupCompile.cache
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SharpMule.g.resources
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\SharpMule.exe
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\SharpMule.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\FindReplace.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\ICSharpCode.AvalonEdit.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\SharpMule.Automation.Framework.Essentials.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\SharpMule.Automation.Framework.Network.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\MySql.Data.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\Renci.SshNet.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\MongoDB.Bson.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\Newtonsoft.Json.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\SharpMule.Automation.Framework.Essentials.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\XProject\SharpMule.Automation.Framework.Network.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SharpMule.Properties.Resources.resources
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule\obj\x86\Debug\SharpMule.csproj.GenerateResource.Cache

@@ -1,28 +1,14 @@
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Network.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Network.pdb
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Essentials.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\HtmlAgilityPack.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\MySql.Data.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\Renci.SshNet.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\osswrapper.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\XmlDiffPatch.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\MongoDB.Bson.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\Newtonsoft.Json.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Essentials.pdb
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\bin\Debug\Newtonsoft.Json.xml
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\ETG.Trip.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.pdb
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Network.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Network.pdb
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Essentials.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\HtmlAgilityPack.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\MySql.Data.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\Renci.SshNet.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\osswrapper.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\XmlDiffPatch.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\MongoDB.Bson.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\Newtonsoft.Json.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Essentials.pdb
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.csprojResolveAssemblyReference.cache
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.dll
-\\psf\Home\Desktop\GitHub\trip-helios\test_mule_automation public\SharpMule.Automation.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Network.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Network.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Essentials.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\HtmlAgilityPack.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\MySql.Data.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\Renci.SshNet.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\osswrapper.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\XmlDiffPatch.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\MongoDB.Bson.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\Newtonsoft.Json.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\bin\Debug\SharpMule.Automation.Framework.Essentials.pdb
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.dll
+\\psf\Home\Desktop\GitHub\SharpMule\SharpMule.Automation.Framework.Network\obj\Debug\SharpMule.Automation.Framework.Network.pdb
